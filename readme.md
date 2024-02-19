@@ -134,7 +134,7 @@ You'll get two directories inside this repo: one with the Frontend (**musiversal
    ```sh
    DATABASE_URL="file:./dev.db"
    APP_URL = "http://localhost:5173"
-   PORT = 3000"
+   PORT = 3000
    ```
 
 4. Then, still inside the directory, you should run the following installation command:
