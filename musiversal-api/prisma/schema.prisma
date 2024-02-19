@@ -1,0 +1,43 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Musician {
+  id           Int           @id @default(autoincrement())
+  name         String
+  avatar       String        @default("https://cdn1.iconfinder.com/data/icons/avatars-55/100/avatar_profile_user_music_headphones_shirt_cool-512.png")
+  enabled      Boolean       @default(true)
+  availability Availability[]
+  bookedSessions BookingSession[]
+  services     Service[]    
+}
+
+model Availability {
+  id          Int      @id @default(autoincrement())
+  dayOfWeek   Int
+  timeSlots   String
+  musician    Musician @relation(fields: [musicianId], references: [id])
+  musicianId  Int
+}
+
+model BookingSession {
+  id        Int        @id @default(autoincrement())
+  client    String
+  date      String
+  service   Service    @relation(fields: [serviceId], references: [id])
+  serviceId Int
+  musician  Musician   @relation(fields: [musicianId], references: [id])
+  musicianId Int
+}
+
+model Service {
+  id        Int      @id @default(autoincrement())
+  name      String 
+  musicians Musician[]
+  bookedSessions BookingSession[]
+}
