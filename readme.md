@@ -80,7 +80,7 @@ Unit testing is crucial for ensuring software quality. With a Vite project, I de
 
 <br>
 
-#### Backend (API) 
+### Backend (API) 
 For the construction of the API, I chose TypeScript with the Node.js framework: **Express.js**. Express provides a minimalist approach that allowed me to create a REST API quickly.
 
 Following the demanded requisites, to work with a Sqlite Database, the connector here was **Prisma**. I have known Prisma for long and decided to create my first API with this ORM, since it provides [so many features](https://www.prisma.io/typescript), regarding TypeScript development with this tool. However, it has flaws that made me slow my development, like this [one](https://github.com/prisma/prisma/issues/3084). *Maybe next time I use Sequelize?* 😂
