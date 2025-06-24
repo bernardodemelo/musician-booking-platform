@@ -6,19 +6,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="https://f.hubspotusercontent20.net/hubfs/8381278/Logo-Full%20(1).png" alt="Logo"  height="80">
 
-  <h3 align="center">Musiversal Booking Platform App</h3>
-
-  <p align="center">
-    My Application for the Musiversal Full Stack Developer Challenge.
-    <br />
-    <br />
-    <a href="https://www.loom.com/share/393eaed1decf458bbafee511ce6b6725?sid=5bc22da9-106b-4388-a7c6-59a3ec43882a">View Demo</a>
-    ·
-    <a href="https://bernardodmelo.portal.swaggerhub.com/musiversal/default/booking-platform-musiversal-api-v-1-0-0">Swagger API</a>
-    
-  </p>
+  <h3 align="center">Musician Booking Platform App</h3>
 </div>
 
 
@@ -30,7 +19,7 @@
 
 </div>
 
-Following the guidelines of this Tech Challenge, I created a **Musician Booking Platform**.
+I created a **Musician Booking Platform**.
 
 By accessing the application, users can choose from musicians who have enabled their presence on the app.
 
@@ -115,12 +104,12 @@ To run the application on your computer, you must have [**SQLite**](https://www.
 After this confirmation, you can git clone the project, by running the following command in your terminal: 
 
 ```sh
-git clone https://github.com/bernardodemelo/musiversal-booking-platform.git
+git clone https://github.com/bernardodemelo/musician-booking-platform.git
 ```
 
-You'll get two directories inside this repo: one with the Frontend (**musiversal-app**) and another for the Backend(**musiversal-api**). Follow these steps:
+You'll get two directories inside this repo: one with the Frontend (**musician-app**) and another for the Backend(**musician-api**). Follow these steps:
 
-1. Inside **musiversal-app**, you should create a .env file, write the following code and save it:
+1. Inside **musician-app**, you should create a .env file, write the following code and save it:
    ```sh
    VITE_SERVER_URL = "http://localhost:3000"
    ```
@@ -130,7 +119,7 @@ You'll get two directories inside this repo: one with the Frontend (**musiversal
    npm install
    ```
 
-3. Thereafter, inside **musiversal-api**, you should create another .env, write this code and save it: 
+3. Thereafter, inside **musician-api**, you should create another .env, write this code and save it: 
    ```sh
    DATABASE_URL="file:./dev.db"
    APP_URL = "http://localhost:5173"
@@ -146,22 +135,22 @@ You'll get two directories inside this repo: one with the Frontend (**musiversal
 
 ### Run the Project
 
-Inside **musiversal-app**, to run the frontend, execute the following command: 
+Inside **musician-app**, to run the frontend, execute the following command: 
  ```sh
    npm run dev
    ```
 
-And run the exact same command, in a separate terminal window, inside the **musiversal-app** directory, in order to run the Backend. 
+And run the exact same command, in a separate terminal window, inside the **musician-app** directory, in order to run the Backend. 
 <br>
 
 ### Test the Project
 
-Inside **musiversal-app**, to test the Frotend, execute the following command: 
+Inside **musician-app**, to test the Frotend, execute the following command: 
  ```sh
    npm run test
    ```
 
-And run the exact command inside the **musiversal-app** directory, to test the Backend. 
+And run the exact command inside the **musician-app** directory, to test the Backend. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
